@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my-react-app</title>
+    <style>
+  html, body { margin: 0; height: 100%; background: #55701a; }
+  .boot { position: fixed; inset: 0; display: grid; place-items: center; background: #55701a; }
+  .boot i {
+    width: 44px; height: 44px; border-radius: 50%;
+    border: 4px solid rgba(255,255,255,.25); border-top-color: #fff;
+    animation: bootspin .9s linear infinite;
+  }
+  @keyframes bootspin { to { transform: rotate(360deg); } }
+</style>
+  </head>
+  <body>
+    <div id="root"><div class="boot"><i></i></div></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

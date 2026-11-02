@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&family=Poppins:wght@400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Titan One", cursive;
+  --font-body: "Poppins", sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* floating ingredient size multiplier (bigger on phones) */
+.stage {
+  --fs: 1;
+}
+@media (max-width: 767px) {
+  .stage {
+    --fs: 2.1;
+  }
+}
